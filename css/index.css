@@ -18,9 +18,13 @@
     }
 
 .banner{
-    height: 20em;
-    margin-top: 4.1em;
+    position: inherit;
+    margin-top: 5em;
     background: linear-gradient(130deg,#149eed 15%, #4285f4 85%);
+}
+
+.banner img{
+    width: 100%;
 }
 
 .barra-nav{
@@ -31,9 +35,9 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -70%;
+    left: -72%;
     transition: left 0.5s ease-out;
-/*    box-shadow: 0em 0.01em 0.5em #3f4652;*/
+    box-shadow: 0em 0.01em 0.5em #3f4652;
 }
 
 body{
@@ -56,8 +60,8 @@ body{
 
 .botao-inscricao{
     color: #fff;
-    background-color: #149eed;
-    border: .12em solid #149eed;
+    background-color: #4dba7a;
+    border: .12em solid #4dba7a;
 }
 
 .botao-login{
@@ -93,7 +97,7 @@ body{
     margin: 0 auto;
     width: 100%;
     max-width: 2000px;
-    height: 4em;
+    height: 5em;
     background-color: #fff;
     box-shadow: 0em 0.01em 0.5em #3f4652;
 }
@@ -112,10 +116,6 @@ body{
     display: inline-block;
 }
 
-.menu-ativo .barra-nav{
-    left: 0;
-}
-
 .menu-ativo:after{
     content: "";
     display: block;
@@ -125,6 +125,10 @@ body{
     left: 0;
     bottom: 0;
     background: rgba(0,0,0,0.1);
+}
+
+.menu-ativo .barra-nav{
+    left: 0;
 }
 
 .menu-principal{
@@ -163,6 +167,21 @@ body{
         align-items: center;
         justify-content: space-between;
         margin-right: 3em;
+        box-shadow: none;
+    } 
+    .botao-login{
+        transition: color 0.5s,background-color 0.5s;
+    }
+    .botao-login:hover{
+        background: #149eed;
+        color: #fff;
+    }
+    .botao-inscricao{
+        transition: opacity 0.5s;
+    }
+    .botao-inscricao:hover{
+        opacity: 0.7;
+        
     }
     .botoes-acesso{
         display: inline-block;
@@ -186,8 +205,12 @@ body{
         margin-left: auto;
     }
     .menu-principal a{
+        transition: color 0.5s;
         font-weight: bold;
         color: #666666;
+    }
+    .menu-principal a:hover{
+        color: #149eed;
     }
 }
 
