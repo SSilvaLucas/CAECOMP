@@ -12,56 +12,36 @@
     display: flex;
     vertical-align: middle;
 }
-
-.abre-menu img{
-    width: 100%;
-    box-sizing: border-box;
-}
+    .abre-menu img{
+        width: 100%;
+        box-sizing: border-box;
+    }
 
 .banner{
-    margin-top: 0.05em;
     height: 20em;
-    margin-top: 4em;
+    margin-top: 4.1em;
     background: linear-gradient(130deg,#149eed 15%, #4285f4 85%);
-}
-
-.barra-cabecalho{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    height: 4em;
-    width: 100%;
-    box-shadow: 0em 0.01em 0.5em #3f4652;
 }
 
 .barra-nav{
     background: #fff;
-/*    background: #4285f4;*/
-/*    background: #3f4652;*/
-    padding: 1em;
-    margin: 0;
-    
     height: 100%;
     width: 70%;
     max-width: 300px;
-    
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -100%;
-    
+    left: -70%;
     transition: left 0.5s ease-out;
+/*    box-shadow: 0em 0.01em 0.5em #3f4652;*/
 }
 
 body{
-    font-family: 'Roboto Slab', serif;
     font-size: 1em;
+    font-family: 'Roboto Slab', serif;
     background: #eee;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .botao{
@@ -77,40 +57,59 @@ body{
 .botao-inscricao{
     color: #fff;
     background-color: #149eed;
+    border: .12em solid #149eed;
 }
 
 .botao-login{
     color: #149eed;
     background-color: #fff;
     border: .12em solid #149eed;
-    margin-bottom: 1em;
     margin-right: 1em;
+    margin-bottom: 0.5em;
 }
 
-.botoes-menu{
-    margin-bottom: 2em;
-    margin-top: 2em;
+.botoes-acesso{
+    margin-left: 1em;
 }
 
 .cabecalho-menu-mobile{
     display: flex;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: space-between;
+    margin-top: 0.85em;
 }
+    .cabecalho-menu-mobile h1{
+        font-size: 1.3em;
+        margin-left: 1em;
+        margin-top: .5em;
+    }
 
-.cabecalho-menu-mobile h1{
-    font-size: 1.3em;
-}
-
-.conteiner{
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
     margin: 0 auto;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 2000px;
+    height: 4em;
+    background-color: #fff;
+    box-shadow: 0em 0.01em 0.5em #3f4652;
+}
+
+.fecha-menu{
+    margin-right: 0.5em;
 }
 
 .logo-site{
     width: 100%;
     text-align: center;
     margin-right: 2.5em;
+}
+
+.logo-site, .barra-nav, .menu-principal{
+    display: inline-block;
 }
 
 .menu-ativo .barra-nav{
@@ -120,29 +119,28 @@ body{
 .menu-ativo:after{
     content: "";
     display: block;
-    
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
     bottom: 0;
-    
     background: rgba(0,0,0,0.1);
 }
 
 .menu-principal{
-    margin-bottom: 1em;
-}
-
-.menu-principal a{
-    text-decoration: none;  
-    color: #666666;
-}
-
-.menu-principal li{
-    padding: 1em 0;
-    width: 100%;  
-}
+    list-style-type: none;
+}   
+    .menu-principal li{
+        padding: 1em 0;
+        width: 100%;
+        margin-left: 1.5em;
+    }
+    .menu-principal a {
+		display: block;
+		line-height: 1.2em;
+		text-decoration: none;
+        color: #666666;
+	}
 
 .separador{
     background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 1), rgba(200, 200, 200, 0));
@@ -150,13 +148,64 @@ body{
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
 }
 
-/* Telas Desktop*/
+
+
+/*Telas Desktops*/
 @media (min-width: 980px){
-    .menu-mobile{
-        display: none;
+    .barra-nav{
+        position: static;
+        max-width: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 3em;
+    }
+    .botoes-acesso{
+        display: inline-block;
+        margin-left: auto;
+        padding: auto;
+    }
+    .cabecalho-menu-mobile, .abre-menu, .separador{
+        display: none;    
+    }
+    .container{
+        justify-content: space-around;
+    }
+    .logo-site{
+        width: auto;
+        text-align: center;
+    }
+    .menu-principal li{
+        display: inline-block;
+        padding: auto;
+        width: auto; 
+        margin-left: auto;
+    }
+    .menu-principal a{
+        font-weight: bold;
+        color: #666666;
+    }
+}
+
+/*Telas tablets maiores*/
+@media (max-width: 1350px) and (min-width: 980px){
+    .menu-principal{
+        font-size: 0.75em;
+    }
+    .menu-principal li{
+        margin-right: 2em;
+    }
+    .botao{
+        padding: 0.5em 1em;
+    }
+}
+
+@media (min-width: 1350px){
+    .menu-principal li{
+        margin-right: 2.5em;
     }
 }
