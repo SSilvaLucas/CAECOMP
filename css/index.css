@@ -1,63 +1,80 @@
-.abre-menu, .fecha-menu{
-    background: none;
-    border: 0;
-    outline: 0;
-    -webkit-appearance: none;
-    font-size: 1.6em;
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: #eee;
+    font-size: 1em;
+}
+/*MENU*/
+
+.abre-menu, .logo-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .abre-menu{
-    padding: 0;
-    margin-left: 1.5em;
-    display: flex;
-    vertical-align: middle;
+    margin-left: 2em;
 }
-    .abre-menu img{
+
+.banner{
+    position: relative;
+    background: linear-gradient(141deg, #2cb5e8 0%, #149eed 51%, #4285f4 75%);
+    margin-top: 4.5em;
+}
+    .banner img{
         width: 100%;
-        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .banner .botao-face{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 80%;
+        top: 80%;
+        transform: translate(-50%,-50%);
     }
 
-.barra-nav{
-    background: #fff;
-    height: 100%;
-    width: 70%;
-    margin: 0;
-    max-width: 300px;
+.barra-cabecalho{
+    display: flex;
     position: fixed;
-    z-index: 1;
     top: 0;
-    left: -72%;
-    transition: left 0.5s ease-out;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    height: 5em;
     box-shadow: 0em 0.01em 0.5em #3f4652;
 }
 
-
-.banner{
-    position: inherit;
-    margin-top: 5em;
-    background: linear-gradient(141deg, #2cb5e8 0%, #149eed 51%, #4285f4 75%);
+.barra-nav-mobile{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 75%;
+    z-index: 2;
+    max-width: 350px;
+    padding: 1em;
+    background: #fff;
+    box-shadow: 0em 0.01em 0.5em #3f4652;
+    left: -80%;
+    transition: left 0.5s ease-out;
 }
 
-.banner img{
+.barra-nav-desktop{
+    display: none;
     width: 100%;
-}
-
-
-
-body{
-    font-size: 1em;
-    font-family: 'Roboto Slab', serif;
-    background: #eee;
-    max-width: 2000px;
-    margin: 0 auto;
+    height: 100%;
+    position: relative;
 }
 
 .botao{
-    padding: 0.8em 2em;
+    padding: 0.8em 1.6em;
     border: 0px;
     border-radius: 0.4em;
     text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -68,72 +85,70 @@ body{
     border: .12em solid #4dba7a;
 }
 
+.botao-inscricao:active{
+    opacity: 0.7;
+}
+
 .botao-login{
     color: #149eed;
     background-color: #fff;
     border: .12em solid #149eed;
     margin-right: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
 }
 
-.botoes-acesso{
-    margin-left: 1em;
+.botao-login:active{
+    background: #149eed;
+    color: #fff;
 }
 
 .cabecalho-menu-mobile{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 0.85em;
+    margin-bottom: 1em;
 }
     .cabecalho-menu-mobile h1{
-        font-size: 1.3em;
-        margin-left: 1em;
-        margin-top: .5em;
+        margin-top: .8em;
+        margin-left: .5em;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #3f4652;
+        text-shadow: .08em .08em .08em #bbb;
     }
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding-top: 3em;
-    padding-bottom: 3em;
+.fecha-menu, .abre-menu{
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    padding: 0;
 }
-
-.container-top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 2000px;
-    height: 5em;
-    background-color: #fff;
-    box-shadow: 0em 0.01em 0.5em #3f4652;
-}
-
-.fecha-menu{
-    margin-right: 0.5em;
-}
+    .fecha-menu .material-icons{
+        padding: 0;
+        margin-right: 0;
+    }
 
 .logo-site{
-    width: 100%;
-    text-align: center;
-    margin-right: 2.5em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+    .logo-site img{
+        width: 100%;
+    }
+
+.material-icons{
+    margin-right: .3em;
+    color: #149eed;
 }
 
-.logo-site, .barra-nav, .menu-principal{
-    display: inline-block;
-}
-
-
-.menu-ativo .barra-nav{
+.menu-ativo .barra-nav-mobile{
     left: 0;
 }
-
+    
 .menu-ativo:after{
     content: "";
     display: block;
@@ -143,153 +158,171 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    
     background: rgba(0,0,0,0.1);
 }
 
 .menu-principal{
-    list-style-type: none;
-}   
+    margin-top: 1em;
+}
     .menu-principal li{
-        padding: 1em 0;
-        width: 100%;
-        margin-left: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 1.8em;
     }
-    .menu-principal a {
-		display: block;
-		line-height: 1.2em;
+    .menu-principal a{
 		text-decoration: none;
         color: #666666;
-	}
+        text-shadow: .05em .05em .05em #bbb;
+    }
 
-.paragrafo{
-    font-family: 'Open Sans',Arial,sans-serif;
-    text-align: center;
-    margin-bottom: 1em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    font-weight: normal;
-    line-height: 1.7;
-    font-size: .9em;
-    color: #666666;
+nav{
+    font-family: 'Roboto', sans-serif;
 }
 
 .separador{
+    display: block;
     background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 1), rgba(200, 200, 200, 0));
     background-size: 100% 0.1em;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-top: 1em;
-    margin-top: 1.5em;
-    margin-bottom: 0.75em;
+    padding-top: 0.5em;
+}
+
+/*CORPO*/
+
+.corpo{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.paragrafo{
+    font-family: 'Open Sans',Arial,sans-serif;
+    text-align: center;
+    line-height: 1.7;
+    font-size: .9em;
+    color: #666666;
+    margin-bottom: 1em;
 }
 
 .sobre{
-    background: radial-gradient(125deg,#f8f8f8 20%, #fff 80%);
-}
-
-.titulo{
     width: 100%;
-    text-align: center;
-    padding-bottom: 1.5em;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    color: #3f4652;
+    margin: 0 auto;
+    padding: 2em;
+    background: #fff;
 }
 
+.titulo-secao{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #3f4652;
+    font-size: 2em;
+    text-shadow: .08em .08em .08em #bbb;
+    margin: .5em 0em 1em 0em;
+}
+    .titulo-secao .material-icons{
+        font-size: 1.3em;
+    }
 
 
-/*Telas Desktops*/
+
+/*TELAS DESKTOPS E TABLETS*/
 @media (min-width: 980px){
-    .barra-nav{
-        position: static;
-        max-width: none;
+    .abre-menu, .barra-nav-mobile, .barra-nav-mobile{
+        display: none;
+    }
+    .barra-cabecalho{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin-right: 3em;
-        box-shadow: none;
-    } 
+        justify-content: flex-end;
+    }
+    .barra-nav-desktop{
+        display: inherit;
+        width: 100%;
+    }
+    .barra-nav-desktop .botoes-acesso{
+        position: absolute;
+        right: -3%;
+        left: auto;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .botao-inscricao{
+        font-size: .6em;
+        transition: opacity 0.5s;
+    }
+    .botao-inscricao:hover{
+        opacity: 0.7;
+    }
     .botao-login{
+        margin: 0 1em 0 0;
+        font-size: .6em;
         transition: color 0.5s,background-color 0.5s;
     }
     .botao-login:hover{
         background: #149eed;
         color: #fff;
     }
-    .botao-inscricao{
-        transition: opacity 0.5s;
-    }
-    .botao-inscricao:hover{
-        opacity: 0.7;
-        
-    }
-    .botoes-acesso{
-        display: inline-block;
-        margin-left: auto;
-        padding: auto;
-    }
-    .cabecalho-menu-mobile, .abre-menu, .separador{
-        display: none;    
-    }
-    .container{
-        justify-content: space-around;
+    body{
+        font-size: 1.2em;
     }
     .logo-site{
-        margin-right: 0;
-        margin-left: 2em;
-        width: auto;
-        text-align: center;
+        position: absolute;
+        left: 9%;
+        top: 50%;
+        transform: translate(-50%,-50%);
     }
-    .menu-principal li{
+    .menu-principal{
+        margin: auto;
+        display: flex;
+         position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+   .menu-principal li{
         display: inline-block;
-        padding: auto;
-        width: auto; 
-        margin-left: auto;
+        margin: 0em 1.5em 0em 0em;
     }
     .menu-principal a{
-        transition: color 0.5s;
-        font-weight: bold;
+		text-decoration: none;
+        font-size: .8em;
+        text-transform: uppercase;
         color: #666666;
+        text-shadow: .05em .05em .05em #bbb;
+        transition: color 0.5s;
     }
     .menu-principal a:hover{
         color: #149eed;
     }
     .paragrafo{
-        font-family: 'Open Sans',Arial,sans-serif;
         text-align: justify;
-        text-indent: 3em;
-        margin-bottom: 2em;
-        margin-left: 5em;
-        margin-right: 5em;
-        font-weight: normal;
-        line-height: 1.7;
-        font-size: 1.5em;
-        color: #666666;
     }
-    .titulo{
-        width: 100%;
-        text-align: center;
-        padding-bottom: 1.5em;
-        text-transform: uppercase;
-        font-size: 3em;
-    }    
-    
-/*Telas tablets maiores*/
-@media (max-width: 1350px) and (min-width: 980px){
-    .menu-principal{
-        font-size: 0.75em;
+}
+
+@media (max-width: 1200px) and (min-width: 980px){
+    .botao-inscricao{
+        font-size: .5em;
     }
-    .menu-principal li{
-        margin-right: 2em;
+   .botao-login{
+        font-size: .5em;
     }
-    .botao{
-        padding: 0.5em 1em;
+    .menu-principal a{
+        font-size: .6em;
     }
 }
 
 @media (min-width: 1350px){
-    .menu-principal li{
-        margin-right: 2.5em;
+    .botao-inscricao{
+        font-size: .7em;
+    }
+   .botao-login{
+        font-size: .7em;
+    }
+    .menu-principal a{
+        font-size: 1em;
     }
 }

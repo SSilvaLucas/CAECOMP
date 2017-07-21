@@ -6,27 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="icon" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">    
 </head>
 <body>
     <header>
-        <div class="container-top">
+        <nav class="barra-nav-mobile">
+            <header class="cabecalho-menu-mobile">
+                <h1>Bem Vindo !</h1>
+                <button class="fecha-menu">
+                    <i class="material-icons">close</i>
+                </button>
+            </header> 
+            <span class="separador"></span>
+            <ul class="menu-principal">
+                <li>
+                    <i class="material-icons">home</i>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <i class="material-icons">local_activity</i>
+                    <a href="#">Evento</a>
+                </li>
+                <li>
+                    <i class="material-icons">supervisor_account</i>
+                    <a href="#">Convidados</a>
+                </li>
+                <li>
+                    <i class="material-icons">announcement</i>
+                    <a href="#">Atividades</a>
+                </li>
+                <li>
+                    <i class="material-icons">date_range</i>
+                    <a href="#">Programação</a>
+                </li>
+                <li>
+                    <i class="material-icons">record_voice_over</i>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+            <div class="botoes-acesso">
+                <button class="botao botao-login">Login</button>
+                <button class="botao botao-inscricao">Inscreva-se</button>
+            </div>   
+        </nav>
+        <div class="barra-cabecalho">
             <button class="abre-menu">
-                <img alt="Menu" src="img/menu.png">
+                <i class="material-icons">menu</i>
             </button>
             <h1 class="logo-site">
-                <img src="img/logo.png" alt="Logo da SITE">
+                <img src="img/logo.png" alt="SITE - Semana de Integração de Tecnologia e Empreendedorismo">
             </h1>
-            <nav class="barra-nav">
-                <header class="cabecalho-menu-mobile">
-                    <h1>Bem Vindo !</h1>
-                    <button class="fecha-menu">
-                        <img src="img/fechar.png">
-                    </button>
-                </header> 
-                <div class="separador"></div>
+            <nav class="barra-nav-desktop">
                 <ul class="menu-principal">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Evento</a></li>
@@ -35,7 +69,6 @@
                     <li><a href="#">Programação</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
-                <div class="separador"></div>
                 <div class="botoes-acesso">
                     <button class="botao botao-login">Login</button>
                     <button class="botao botao-inscricao">Inscreva-se</button>
@@ -44,19 +77,28 @@
         </div>
         <div class="banner">
             <img src="img/banner.png" alt="3ª Semana de Integração de Tecnologia e Empreededorismo">
+            <div class="botao-face">
+                <button class="face">
+                    <a href="https://www.facebook.com/caecomp.uepg/">Teste</a>
+                </button>
+            </div>
         </div>
     </header>
-    <main>
-        <div class="container sobre">
-            <h1 class="titulo">Sobre a SITE</h1>
+    <main class="corpo">
+        <section class="sobre">
+            <div class="titulo-secao">
+                <i class="material-icons">local_activity</i>
+                <h2>Evento</h2>
+            </div>
             <p class="paragrafo">
                 A Semana de Integração de Tecnologia e Empreendedorismo objetiva-se a proporcionar um ambiente de integração e crescimento mútuo entre os participantes congregando alunos, professores, engenheiros e demais profissionais que venham a se interessar, para implementar a integração social, tecnológica e profissional, o intercâmbio de experiências e reciclagem de conhecimentos.
             </p>
             <p class="paragrafo">
                 Assim, a comissão organizadora da 3ª Semana de Integração de Tecnologia e Empreendedorismo, formadas por membros do Centro Acadêmico de Estudantes de Engenharia de Computação e pelo programa CREA-JR – PR promovem, com o apoio da Universidade Estadual da Ponta Grossa (UEPG), a 3ª Semana de Integração de Tecnologia e Empreendedorismo, na cidade de Ponta Grossa - PR, no período de 07 a 11 de agosto de 2017, promovendo a interação entre estudantes, pesquisadores e profissionais na área da engenharia.
             </p>
-        </div>
+        </section>
     </main>
-   <script src="js/menu.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
+    
