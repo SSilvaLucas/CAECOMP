@@ -319,18 +319,18 @@ nav{
     padding: .5em;
 }
 
-.palestras{
-    margin: 3em auto;
-    background: #20497a;
-    padding: 1em 1.2em 1em 1.2em;
-    box-shadow: 0em 0.01em 0.5em #3f4652;
-}
-
 .minicursos{
     width: 100%;
     margin: 3em auto;
     background: #3f4461;
     padding: 1em;
+    box-shadow: 0em 0.01em 0.5em #3f4652;
+}
+
+.palestras{
+    margin: 3em auto;
+    background: #20497a;
+    padding: 1em 1.2em 1em 1.2em;
     box-shadow: 0em 0.01em 0.5em #3f4652;
 }
     
@@ -363,6 +363,7 @@ nav{
     align-items: center;
     justify-content: center;
     margin-bottom: 1em;
+    margin-top: 1.5em;
 }
     .titulo-box-atividades i{
         color: #fff;
@@ -391,6 +392,27 @@ nav{
     .box-convidado{
         width: 50%;
         padding: 3em 2em 1em 2em;
+    }
+    .detalhes-atividade{
+        width: 50%;
+    }
+    .minicursos .detalhes-atividade{
+        border: .5em solid #3f4461;
+    }
+    .palestras .detalhes-atividade{
+        border: .5em solid #20497a;
+    }
+}
+
+@media (min-width: 768px){
+    .detalhes-atividade{
+        width: 33%;
+    }
+    .minicursos .detalhes-atividade{
+        border: .4em solid #3f4461;
+    }
+    .palestras .detalhes-atividade{
+        border: .4em solid #20497a;
     }
 }
 
@@ -435,6 +457,9 @@ nav{
     body{
         font-size: 1.2em;
     }
+    .detalhes-atividade{
+        width: 25%;
+    }
     .faixa-convidados h2{
         padding: 2em;
         font-size: 2em;
@@ -468,6 +493,12 @@ nav{
     .menu-principal a:hover{
         color: #149eed;
     }
+    .minicursos .detalhes-atividade{
+        border: .4em solid #3f4461;
+    }
+    .palestras .detalhes-atividade{
+        border: .4em solid #20497a;
+    }
     .paragrafo{
         text-indent: 2em;
         text-align: justify;
@@ -492,6 +523,15 @@ nav{
    .botao-login{
         font-size: .7em;
     }
+    .detalhes-atividade{
+        width: 20%;
+    }
+    .minicursos .detalhes-atividade{
+        border: 1em solid #3f4461;
+    }
+    .palestras .detalhes-atividade{
+        border: 1em solid #20497a;
+    }
     .menu-principal a{
         font-size: 1em;
     }
@@ -512,31 +552,5 @@ nav{
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 980px){
-    .detalhes-atividade{
-        width: 46%;
-        margin: 2%;
-    }
-    .detalhes-atividade:nth-child(2n+1){
-        margin-left: auto;
-    }
-     .detalhes-atividade:nth-child(2n){
-        margin-right: auto;
-    }
-    .detalhes-atividade:last-child{
-        margin-left: 2%;
-    }
-}
 
-@media only screen and (min-width: 980.1px) and (max-width: 1380px){
-    .detalhes-atividade{
-        width: 27%;
-        margin: 2%;
-    }
-    .detalhes-atividade:nth-child(3n+1){
-        margin-left: auto;
-    }
-     .detalhes-atividade:nth-child(3n){
-        margin-right: auto;
-    } 
-}
+
