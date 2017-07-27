@@ -1,3 +1,8 @@
+/*
+Made by Lucas Silva
+License: none (public domain)
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -246,6 +251,12 @@ nav{
         opacity: 0.8;
     }
 
+.box-membro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .convidados{
     display: flex;
     flex-wrap: wrap;
@@ -295,6 +306,23 @@ nav{
         line-height: 1.2;
     }
 
+.equipe{
+    width: 100%;
+    background: #4dba7a;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+    .equipe h2{
+        text-align: center;
+        padding: 2em 1em 1em 1em;
+        font-family: 'Fjalla One', sans-serif;
+        color: #fff;
+        line-height: 1.5;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
 .faixa-convidados{
     width: 100%;
     background: #5e9edc;
@@ -318,6 +346,22 @@ nav{
     justify-content:center;
     padding: .5em;
 }
+
+.membro{
+    width: 33%;
+    padding: 1em;
+}
+    .membro img{
+        width: 100%;
+        border-radius: 50% 50%;
+        box-shadow: 0em 0.01em 0.5em #3f4652;
+    }
+    .membro h3{
+        margin-top: .3em;
+        text-align: center;
+        font-family: 'Fjalla One', sans-serif;
+        color: #fff;
+    }
 
 .minicursos{
     width: 100%;
@@ -348,7 +392,7 @@ nav{
 
 .programacao{
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 4em auto;
     padding: 1em;
 }
 
@@ -437,8 +481,6 @@ tr:nth-child(even) {
 }
  
 
-
-
 /*TELAS DESKTOPS E TABLETS*/
 
 @media (min-width: 600px){
@@ -449,6 +491,11 @@ tr:nth-child(even) {
     .detalhes-atividade{
         width: 50%;
     }
+    .membro{
+        width: 20%;
+        margin: .5em;
+        padding: 1em;
+    }
     .minicursos .detalhes-atividade{
         border: .5em solid #3f4461;
     }
@@ -457,13 +504,18 @@ tr:nth-child(even) {
     }
     tr:hover {
     background-color: #ccc;
-}
+    }
   
 }
 
 @media (min-width: 768px){
     .detalhes-atividade{
         width: 33%;
+    }
+    .membro{
+        width: 20%;
+        padding: 1em;
+        margin: .5em;
     }
     .minicursos .detalhes-atividade{
         border: .4em solid #3f4461;
@@ -526,6 +578,10 @@ tr:nth-child(even) {
         left: 9%;
         top: 50%;
         transform: translate(-50%,-50%);
+    }
+    .membro{
+        width: 12%;
+        padding: 1em;
     }
     .menu-principal{
         margin: auto;

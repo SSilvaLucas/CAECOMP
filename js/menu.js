@@ -1,3 +1,7 @@
+/*
+Made by Lucas Silva
+License: none (public domain)
+*/
 document.querySelector(".abre-menu").onclick = function(){
     document.documentElement.classList.add("menu-ativo");
 };
