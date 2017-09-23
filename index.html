@@ -30,27 +30,27 @@ License: none (public domain)
             <ul class="menu-principal">
                 <li>
                     <i class="material-icons">home</i>
-                    <a href="#">Home</a>
+                    <a class="scroll-suave" href="#link-home">Home</a>
                 </li>
                 <li>
                     <i class="material-icons">local_activity</i>
-                    <a href="#">Evento</a>
+                    <a class="scroll-suave" href="#link-sobre">Evento</a>
                 </li>
                 <li>
                     <i class="material-icons">supervisor_account</i>
-                    <a href="#">Convidados</a>
+                    <a class="scroll-suave" href="#link-convidados">Convidados</a>
                 </li>
                 <li>
                     <i class="material-icons">announcement</i>
-                    <a href="#">Atividades</a>
+                    <a class="scroll-suave" href="#link-atividade">Atividades</a>
                 </li>
                 <li>
                     <i class="material-icons">date_range</i>
-                    <a href="#">Programação</a>
+                    <a class="scroll-suave" href="#link-programacao">Programação</a>
                 </li>
                 <li>
                     <i class="material-icons">record_voice_over</i>
-                    <a href="#">Contato</a>
+                    <a class="scroll-suave" href="#link-contato">Contato</a>
                 </li>
             </ul>
             <div class="botoes-acesso">
@@ -67,12 +67,12 @@ License: none (public domain)
             </h1>
             <nav class="barra-nav-desktop">
                 <ul class="menu-principal">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Evento</a></li>
-                    <li><a href="#">Convidados</a></li>
-                    <li><a href="#">Atividades</a></li>
-                    <li><a href="#">Programação</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a class="scroll-suave" href="#link-home">Home</a></li>
+                    <li><a class="scroll-suave" href="#link-sobre">Evento</a></li>
+                    <li><a class="scroll-suave" href="#link-convidados">Convidados</a></li>
+                    <li><a class="scroll-suave" href="#link-atividade">Atividades</a></li>
+                    <li><a class="scroll-suave" href="#link-programacao">Programação</a></li>
+                    <li><a class="scroll-suave" href="#link-contato">Contato</a></li>
                 </ul>
                 <div class="botoes-acesso">
                     <button class="botao botao-login">Login</button>
@@ -80,12 +80,12 @@ License: none (public domain)
                 </div>   
             </nav>
         </div>
-        <div class="banner">
+        <div id="link-home" class="banner">
             <img src="img/banner.png" alt="3ª Semana de Integração de Tecnologia e Empreededorismo">
         </div>
     </header>
     <main class="corpo">
-        <section class="sobre">
+        <section id="link-sobre" class="sobre">
             <div class="titulo-secao">
                 <i class="material-icons">local_activity</i>
                 <h2>Evento</h2>
@@ -100,7 +100,7 @@ License: none (public domain)
         <section class="faixa-convidados">
             <h2>Integração, Troca de Experiência, Networking e Crescimento Profissional.</h2>
         </section>
-        <section class="secao-convidados">
+        <section id="link-convidados" class="secao-convidados">
             <div class="titulo-secao">
                 <i class="material-icons">supervisor_account</i>
                 <h2>Convidados</h2>
@@ -196,7 +196,7 @@ License: none (public domain)
                 </div>
             </div>
         </section>
-        <section class="atividades">
+        <section id="link-atividade" class="atividades">
              <div class="titulo-secao">
                 <i class="material-icons">announcement</i>
                 <h2>Atividades</h2>
@@ -323,7 +323,7 @@ License: none (public domain)
                 </div>
             </div>
         </section>
-        <section class="programacao">
+        <section id="link-programacao" class="programacao">
             <div class="titulo-secao">
                 <i class="material-icons">date_range</i>
                 <h2>Programação</h2>
@@ -665,7 +665,7 @@ License: none (public domain)
             </table>
         
         </section>
-        <section class="equipe">
+        <section id="link-contato" class="equipe">
             <h2>Comissão Organizadora</h2>
             <div class="box-membro">
                 <div class="membro">
@@ -702,6 +702,8 @@ License: none (public domain)
         </section>
     </main>
     <script src="js/menu.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
     
