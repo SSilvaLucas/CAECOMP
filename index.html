@@ -14,8 +14,10 @@ License: none (public domain)
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Fjalla+One|Droid+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">    
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
     <header>
@@ -25,20 +27,16 @@ License: none (public domain)
                 <button class="fecha-menu">
                     <i class="material-icons">close</i>
                 </button>
-            </header> 
+            </header>
             <span class="separador"></span>
             <ul class="menu-principal">
                 <li>
                     <i class="material-icons">home</i>
-                    <a class="scroll-suave" href="#link-home">Home</a>
+                    <a class="scroll-suave" href="#link-carousel">Home</a>
                 </li>
                 <li>
                     <i class="material-icons">local_activity</i>
                     <a class="scroll-suave" href="#link-sobre">Evento</a>
-                </li>
-                <li>
-                    <i class="material-icons">supervisor_account</i>
-                    <a class="scroll-suave" href="#link-convidados">Convidados</a>
                 </li>
                 <li>
                     <i class="material-icons">announcement</i>
@@ -53,10 +51,10 @@ License: none (public domain)
                     <a class="scroll-suave" href="#link-contato">Contato</a>
                 </li>
             </ul>
-            <div class="botoes-acesso">
+            <!--<div class="botoes-acesso">
                 <button class="botao botao-login">Login</button>
                 <button class="botao botao-inscricao">Inscreva-se</button>
-            </div>   
+            </div>-->
         </nav>
         <div class="barra-cabecalho">
             <button class="abre-menu">
@@ -67,134 +65,85 @@ License: none (public domain)
             </h1>
             <nav class="barra-nav-desktop">
                 <ul class="menu-principal">
-                    <li><a class="scroll-suave" href="#link-home">Home</a></li>
+                    <li><a class="scroll-suave" href="#link-carousel">Home</a></li>
                     <li><a class="scroll-suave" href="#link-sobre">Evento</a></li>
-                    <li><a class="scroll-suave" href="#link-convidados">Convidados</a></li>
                     <li><a class="scroll-suave" href="#link-atividade">Atividades</a></li>
                     <li><a class="scroll-suave" href="#link-programacao">Programação</a></li>
                     <li><a class="scroll-suave" href="#link-contato">Contato</a></li>
                 </ul>
                 <div class="botoes-acesso">
-                    <button class="botao botao-login">Login</button>
-                    <button class="botao botao-inscricao">Inscreva-se</button>
-                </div>   
+                   <button class="botao botao-inscricao">Inscreva-se</button>
+                </div>
             </nav>
-        </div>
-        <div id="link-home" class="banner">
-            <img src="img/banner.png" alt="3ª Semana de Integração de Tecnologia e Empreededorismo">
         </div>
     </header>
     <main class="corpo">
+        <section  id="link-carousel" class="secao-convidados">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <figure class="carousel-item active">
+                      <img id="convidado0" class=".d-block w-100" src="img/convidados/banner.png" alt="Banner Semana de Integração de Tecnologia e Empreendedorismo">
+                  </figure>
+                  <figure class="carousel-item">
+                      <img id="convidado1" class=".d-block w-100" src="img/convidados/mauricio_santos.png" alt="Convidado Maurício dos Santos">
+                  </figure>
+                  <figure class="carousel-item">
+                      <img id="convidado2" class=".d-block w-100" src="img/convidados/maria_alice.png" alt="Convidada Maria Alice">
+                  </figure>
+                  <figure class="carousel-item">
+                      <img id="convidado3" class=".d-block w-100" src="img/convidados/daniel_veiga.png" alt="Convidado Daniel Veiga">
+                  </figure>
+                  <figure class="carousel-item">
+                      <img id="convidado4" class=".d-block w-100" src="img/convidados/tsen.png" alt="Convidado Tsen Chung Kang">
+                  </figure>
+                  <figure class="carousel-item">
+                      <img id="convidado5" class=".d-block w-100" src="img/convidados/luiz_frederico.png" alt="Convidado Tsen Chung Kang">
+                  </figure>
+                  <figure class="carousel-item">
+                      <img id="convidado6" class=".d-block w-100" src="img/convidados/stephen.png" alt="Convidado Stephen Kunihiro">
+                  </figure>
+                  <figure class="carousel-item">
+                      <img id="convidado7" class=".d-block w-100" src="img/convidados/fabio.png" alt="Convidado Fabio Ivatiuk">
+                  </figure>
+                  <figure class="carousel-item">
+                      <img id="convidado8" class=".d-block w-100" src="img/convidados/luiz_mottim.png" alt="Convidado Luiz Mottim">
+                  </figure>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </section>
         <section id="link-sobre" class="sobre">
             <div class="titulo-secao">
                 <i class="material-icons">local_activity</i>
                 <h2>Evento</h2>
             </div>
             <p class="paragrafo">
-                A Semana de Integração de Tecnologia e Empreendedorismo objetiva-se a proporcionar um ambiente de integração e crescimento mútuo entre os participantes congregando alunos, professores, engenheiros e demais profissionais que venham a se interessar, para implementar a integração social, tecnológica e profissional, o intercâmbio de experiências e reciclagem de conhecimentos.
+                A Semana de Integração de Tecnologia e Empreendedorismo objetiva se a proporcionar um ambiente de integração e crescimento mútuo entre os participantes congregando alunos, professores, engenheiros e demais profissionais que venham a se interessar, para implementar a integração social, tecnológica e profissional, o intercâmbio de experiências e reciclagem de conhecimentos.
             </p>
             <p class="paragrafo">
-                Assim, a comissão organizadora da 3ª Semana de Integração de Tecnologia e Empreendedorismo, formadas por membros do Centro Acadêmico de Estudantes de Engenharia de Computação e pelo programa CREA-JR – PR promovem, com o apoio da Universidade Estadual da Ponta Grossa (UEPG), a 3ª Semana de Integração de Tecnologia e Empreendedorismo, na cidade de Ponta Grossa - PR, no período de 07 a 11 de agosto de 2017, promovendo a interação entre estudantes, pesquisadores e profissionais na área da engenharia.
+                Eventos acadêmicos voltados à integração são importantes vias de aprendizagem e conhecimento para acadêmicos, a premissa de membros de uma mesma comunidade possibilita a ampliação de comunicação pessoal, assim, permitindo a troca de informações de maneira intensa. Para a formação de uma atmosfera de desenvolvimentos universitários é imprescindível que os membros constituintes desse meio possuam um eficaz canal de controle, auxiliando o processo de desenvolvimento e maximizando os resultados.
             </p>
-        </section>
-        <section class="faixa-convidados">
-            <h2>Integração, Troca de Experiência, Networking e Crescimento Profissional.</h2>
-        </section>
-        <section id="link-convidados" class="secao-convidados">
-            <div class="titulo-secao">
-                <i class="material-icons">supervisor_account</i>
-                <h2>Convidados</h2>
-            </div>
-            <div class="convidados">
-                <div class="box-convidado">
-                    <figure class="box-img-convidado">
-                        <img class="img-convidado" src="img/convidado1.jpg" alt="Lucas Silva">
-                    </figure>
-                    <h3>Lucas Silva</h3>
-                    <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    <span class="icons-contato">
-                        <a href="#"><img class="icon" src="img/facebook%20.png" alt="facebook"></a>
-                        <a href="#"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
-                    </span>
-                </div>
-                <div class="box-convidado">
-                    <figure class="box-img-convidado">
-                        <img class="img-convidado" src="img/convidado2.jpg" alt="Lucas Silva">
-                    </figure>
-                    <h3>Lucas Silva</h3>
-                    <p>Desenvolvedor web, en</p>
-                    <span class="icons-contato">
-                        <a href="#"><img class="icon" src="img/facebook%20.png" alt="facebook"></a>
-                        <a href="#"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
-                    </span>
-                </div>
-                <div class="box-convidado">
-                    <figure class="box-img-convidado">
-                        <img class="img-convidado" src="img/convidado1.jpg" alt="Lucas Silva">
-                    </figure>
-                    <h3>Lucas Silva</h3>
-                    <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    <span class="icons-contato">
-                        <a href="#"><img class="icon" src="img/facebook%20.png" alt="facebook"></a>
-                        <a href="#"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
-                    </span>
-                </div>
-                <div class="box-convidado">
-                    <figure class="box-img-convidado">
-                        <img class="img-convidado" src="img/convidado1.jpg" alt="Lucas Silva">
-                    </figure>
-                    <h3>Lucas Silva</h3>
-                    <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    <span class="icons-contato">
-                        <a href="#"><img class="icon" src="img/facebook%20.png" alt="facebook"></a>
-                        <a href="#"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
-                    </span>
-                </div>
-                <div class="box-convidado">
-                    <figure class="box-img-convidado">
-                        <img class="img-convidado" src="img/convidado1.jpg" alt="Lucas Silva">
-                    </figure>
-                    <h3>Lucas Silva</h3>
-                    <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    <span class="icons-contato">
-                        <a href="#"><img class="icon" src="img/facebook%20.png" alt="facebook"></a>
-                        <a href="#"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
-                    </span>
-                </div>
-                <div class="box-convidado">
-                    <figure class="box-img-convidado">
-                        <img class="img-convidado" src="img/convidado1.jpg" alt="Lucas Silva">
-                    </figure>
-                    <h3>Lucas Silva</h3>
-                    <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    <span class="icons-contato">
-                        <a href="#"><img class="icon" src="img/facebook%20.png" alt="facebook"></a>
-                        <a href="#"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
-                    </span>
-                </div>
-                <div class="box-convidado">
-                    <figure class="box-img-convidado">
-                        <img class="img-convidado" src="img/convidado1.jpg" alt="Lucas Silva">
-                    </figure>
-                    <h3>Lucas Silva</h3>
-                    <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    <span class="icons-contato">
-                        <a href="#"><img class="icon" src="img/facebook%20.png" alt="facebook"></a>
-                        <a href="#"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
-                    </span>
-                </div>
-                <div class="box-convidado">
-                    <figure class="box-img-convidado">
-                        <img class="img-convidado" src="img/convidado1.jpg" alt="Lucas Silva">
-                    </figure>
-                    <h3>Lucas Silva</h3>
-                    <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    <span class="icons-contato">
-                        <a href="#"><img class="icon" src="img/facebook%20.png" alt="facebook"></a>
-                        <a href="#"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
-                    </span>
-                </div>
-            </div>
+            <p class="paragrafo">
+                Assim, a comissão organizadora da 3ª Semana de Integração de Tecnologia e Empreendedorismo, formada por membros do Centro Acadêmico de Estudantes de Engenharia de Computação promove, com o apoio da Universidade Estadual da Ponta Grossa (UEPG), a 3ª Semana de Integração de Tecnologia e Empreendedorismo, na cidade de Ponta Grossa - PR, no período de 06 a 10 de novembro de 2017, promovendo a interação entre estudantes, pesquisadores e profissionais na área da engenharia.
+            </p>
         </section>
         <section id="link-atividade" class="atividades">
              <div class="titulo-secao">
@@ -206,6 +155,34 @@ License: none (public domain)
                     <i class="material-icons">streetview</i>
                     <h3>Palestras</h3>
                 </header>
+                <div class="detalhe-atividade">
+                  <div id="accordion" role="tablist">
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="titulo-atividade">
+                              <h5 class="mb-0"><i class="material-icons icon-planta">spa</i>Big Data na Agricultura</h5>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">A agricultura de precisão está entrando de forma acelerada no agronegócio brasileiro e, com o Big Data (tecnologia para processar e tratar de grandes quantidades de dados), vai gerar uma nova revolução agrícola, garantindo aumento da produtividade e da produção sem necessidade de aumento de área. Nesta palestra, Tsen abordará a importância da tecnologia no campo e como o Big Data pode revolucionar esse setor.</p>
+                              <p class="paragrafo">Tsen Chung Kang é Doutor em Engenharia de Computação pela Carnegie Mellon University. Professor da Fatec Shunji Nishimura, atua em governança corporativa, planejamento estratégico e inovação tecnológica.</p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/tsen_c.png" alt="Tsen Chung Kang">
+                                </figure>
+                                <h3>Tsen Chung Kang</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/tsen-kang-6a85511/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
                 <div class="box-atividades">
                     <div class="detalhes-atividade">
                         <img src="img/node-js--MINICURSO.png" alt="Minicurso Node">
@@ -339,7 +316,7 @@ License: none (public domain)
                     <tr>
                         <th>
                             <i class="material-icons">access_time</i>
-                            
+
                         </th>
                         <th>
                             <i class="material-icons">announcement</i>
@@ -406,7 +383,7 @@ License: none (public domain)
                     <tr>
                         <th>
                             <i class="material-icons">access_time</i>
-                            
+
                         </th>
                         <th>
                             <i class="material-icons">announcement</i>
@@ -473,7 +450,7 @@ License: none (public domain)
                     <tr>
                         <th>
                             <i class="material-icons">access_time</i>
-                            
+
                         </th>
                         <th>
                             <i class="material-icons">announcement</i>
@@ -540,7 +517,7 @@ License: none (public domain)
                     <tr>
                         <th>
                             <i class="material-icons">access_time</i>
-                            
+
                         </th>
                         <th>
                             <i class="material-icons">announcement</i>
@@ -607,7 +584,7 @@ License: none (public domain)
                     <tr>
                         <th>
                             <i class="material-icons">access_time</i>
-                            
+
                         </th>
                         <th>
                             <i class="material-icons">announcement</i>
@@ -649,6 +626,7 @@ License: none (public domain)
                         <td>Palestra 3 - fskalsmad</td>
                         <td>Observatório asda ggsetgstdht</td>
                     </tr>
+                </div>
                     <tr>
                         <td>15:00</td>
                         <td colspan="2">
@@ -658,26 +636,48 @@ License: none (public domain)
                     </tr>
                     <tr>
                         <td>15:30</td>
+                </div>
                         <td>Palestra 4 - Falando alguma coisa</td>
                         <td>Observatório Astronômico</td>
                     </tr>
                 </tbody>
             </table>
-        
+
         </section>
-        <section id="link-contato" class="equipe">
+        <section class="cadastro" id="link-contato">
+            <div class="titulo-secao">
+                <i class="material-icons">record_voice_over</i>
+                <h2>Contato</h2>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="contato-nome">Nome:</label>
+                    <input id="contato-nome" type="text" placeholder="Seu nome" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="contato-email">Email:</label>
+                    <input type="email" placeholder="Seu e-mail" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Mensagem:</label>
+                    <textarea class="form-control" placeholder="Digite sua mensagem aqui..." rows="3"></textarea>
+                </div>
+            </form>
+            <button class="btn-contato btn btn-outline-primary btn-lg" type="submit">Enviar</button>
+        </section>
+        <section class="equipe">
             <h2>Comissão Organizadora</h2>
             <div class="box-membro">
                 <div class="membro">
-                    <img src="img/convidado1.jpg" alt="Lucas Silva">
+                    <img src="img/equipe/alceu-britto.jpg" alt="Alceu Britto">
                     <h3>Alceu Britto</h3>
                 </div>
                 <div class="membro">
-                    <img src="img/convidado1.jpg" alt="Lucas Silva">
+                    <img src="img/equipe/gustavo-endo.jpg" alt="Gustavo Endo">
                     <h3>Gustavo Endo</h3>
                 </div>
                 <div class="membro">
-                    <img src="img/equipe/lucas-jozefovicz.jpg" alt="Lucas Silva">
+                    <img src="img/equipe/lucas-jozefovicz.jpg" alt="Lucas Jozefovicz">
                     <h3>Lucas Jozefovicz</h3>
                 </div>
                 <div class="membro">
@@ -685,25 +685,32 @@ License: none (public domain)
                     <h3>Lucas Silva</h3>
                 </div>
                 <div class="membro">
-                    <img src="img/equipe/rafael-mattos.jpg" alt="Lucas Silva">
+                    <img src="img/equipe/rafael-mattos.jpg" alt="Rafael de Mattos">
                     <h3>Rafael Mattos</h3>
                 </div>
                 <div class="membro">
-                    <img src="img/equipe/victor-begha.jpg" alt="Lucas Silva">
-                    <h3>Victor Begha</h3>
-                </div>
-                <div class="membro">
-                    <img src="img/equipe/wagner-waiber.jpg" alt="Lucas Silva">
+                    <img src="img/equipe/wagner-waiber.jpg" alt="Wagner Waiber">
                     <h3>Wagner Waiber</h3>
                 </div>
             </div>
         </section>
-        <section class="contato">
-        </section>
     </main>
+    <footer>
+        <address>
+            <strong>Centro Acadêmico de Engenharia de Computação</strong><br>
+            Av. Gen. Carlos Cavalcanti, 4748 - Bloco L<br>
+            Ponta Grossa, PR<br>
+            Tel: (42) 3220-3079
+        </address>
+        <address>
+            Email: caecomp.uepg@gmail.com
+        </address>
+    </footer>
+    <script src="js/jquery-min.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/carousel-img.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/banner-collepse.js"></script>
 </body>
 </html>
-    
