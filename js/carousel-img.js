@@ -13,6 +13,7 @@ var img5 = document.getElementById('convidado5');
 var img6 = document.getElementById('convidado6');
 var img7 = document.getElementById('convidado7');
 var img8 = document.getElementById('convidado8');
+var img9 = document.getElementById('convidado9');
 
 if (width <= 768){
         var img0 = $("#convidado0").attr('src', 'img/convidados/banner_mb.png');
@@ -24,4 +25,5 @@ if (width <= 768){
         var img6 = $("#convidado6").attr('src', 'img/convidados/stephen_mb.png');
         var img7 = $("#convidado7").attr('src', 'img/convidados/fabio_mb.png');
         var img8 = $("#convidado8").attr('src', 'img/convidados/luiz_mottim_mb.png');
+        var img9 = $("#convidado9").attr('src', 'img/convidados/marlos_mb.png');
 }

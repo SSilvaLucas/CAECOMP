@@ -2,6 +2,7 @@
 Made by Lucas Silva
 License: none (public domain)
 */
+
 $(".scroll-suave").click(function(e){
     e.preventDefault();
     var id = $(this).attr('href');

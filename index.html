@@ -48,11 +48,10 @@ License: none (public domain)
                 </li>
                 <li>
                     <i class="material-icons">record_voice_over</i>
-                    <a class="scroll-suave" href="#link-contato">Contato</a>
+                    <a class="scroll-suave" href="#link-organizacao">Organização</a>
                 </li>
             </ul>
             <!--<div class="botoes-acesso">
-                <button class="botao botao-login">Login</button>
                 <button class="botao botao-inscricao">Inscreva-se</button>
             </div>-->
         </nav>
@@ -69,11 +68,11 @@ License: none (public domain)
                     <li><a class="scroll-suave" href="#link-sobre">Evento</a></li>
                     <li><a class="scroll-suave" href="#link-atividade">Atividades</a></li>
                     <li><a class="scroll-suave" href="#link-programacao">Programação</a></li>
-                    <li><a class="scroll-suave" href="#link-contato">Contato</a></li>
+                    <li><a class="scroll-suave" href="#link-organizacao">Organização</a></li>
                 </ul>
-                <div class="botoes-acesso">
+                <!-- <div class="botoes-acesso">
                    <button class="botao botao-inscricao">Inscreva-se</button>
-                </div>
+                </div> -->
             </nav>
         </div>
     </header>
@@ -90,6 +89,7 @@ License: none (public domain)
                   <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
               </ol>
               <div class="carousel-inner">
                   <figure class="carousel-item active">
@@ -118,6 +118,9 @@ License: none (public domain)
                   </figure>
                   <figure class="carousel-item">
                       <img id="convidado8" class=".d-block w-100" src="img/convidados/luiz_mottim.png" alt="Convidado Luiz Mottim">
+                  </figure>
+                  <figure class="carousel-item">
+                      <img id="convidado9" class=".d-block w-100" src="img/convidados/marlos.png" alt="Convidado Marlos Boutin">
                   </figure>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -156,15 +159,18 @@ License: none (public domain)
                     <h3>Palestras</h3>
                 </header>
                 <div class="detalhe-atividade">
-                  <div id="accordion" role="tablist">
+                  <div  id="accordion" role="tablist">
                       <div class="card">
-                          <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             <div class="titulo-atividade">
-                              <h5 class="mb-0"><i class="material-icons icon-planta">spa</i>Big Data na Agricultura</h5>
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-planta">spa</i>
+                                <h5 class="mb-0">Big Data na Agricultura</h5>
+                              </div>
                               <i class="material-icons seta-collapse">arrow_drop_down</i>
                             </div>
                           </div>
-                          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body conteudo-collapse">
                               <p class="paragrafo">A agricultura de precisão está entrando de forma acelerada no agronegócio brasileiro e, com o Big Data (tecnologia para processar e tratar de grandes quantidades de dados), vai gerar uma nova revolução agrícola, garantindo aumento da produtividade e da produção sem necessidade de aumento de área. Nesta palestra, Tsen abordará a importância da tecnologia no campo e como o Big Data pode revolucionar esse setor.</p>
                               <p class="paragrafo">Tsen Chung Kang é Doutor em Engenharia de Computação pela Carnegie Mellon University. Professor da Fatec Shunji Nishimura, atua em governança corporativa, planejamento estratégico e inovação tecnológica.</p>
@@ -180,66 +186,179 @@ License: none (public domain)
                             </div>
                           </div>
                       </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingTwo" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-saude">local_hospital</i>
+                                <h5 class="mb-0">Big Data na Saúde</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                Existem três áreas auspiciosas para o uso de Big Data em saúde: medicina de precisão; prontuários eletrônicos do paciente; e internet das coisas. Em relação às novas técnicas estatísticas, espera-se que técnicas de machine learning (principalmente as árvores de classificação e regressão), metodologias para controlar por associações espúrias (como a correção de Bonferroni e a taxa de falsas descobertas) e metodologias para a redução da dimensão dos dados (como a análise de componentes principais e o propensity score matching) sejam cada vez mais utilizadas. Essas e outras aplicações serão apresentadas nesta palestra ministrada por Stephen.
+                              </p>
+                              <p class="paragrafo">Stephen Kunihiro é graduado em Odontologia pela UNESP, Mestre pela UNICAMP e com duas Pós Graduação (USP, UNICAMP). É sócio proprietário das empresas NK Solutions e Eneka Odontologia. Envolvido com projetos de startups, vive em busca de inovação e tecnologia aplicada a saúde.</p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/stephen_c.png" alt="Stephen Kunihiro">
+                                </figure>
+                                <h3>Stephen Kunihiro</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/stephen-kunihiro-b5249525/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingThree" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-business">business_center</i>
+                                <h5 class="mb-0">Logística 4.0</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                Com o surgimento da Industria 4.0, o Setor Automotivo alcançará patamares de perfeição no desenvolvimento de seus processos produtivos, com alto nível de automação e robotização operacional. Em função desta evolução a área de Supply Chain precisa necessariamente alavancar seus processos, para atender as demandas de Suprimentos e Abastecimentos no mesmo nível de excelência. Esta palestra tem como objetivo demonstrar como o SCM atuará para acompanhar a chamada Quarta Revolução Industrial.
+                              </p>
+                              <p class="paragrafo">Luiz Mottim é graduado em Ciências Contábeis pela UEPG, com Pós Graduação em Gestão Logística e Gestão Industrial, 31 anos de Experiência profissional, trabalhando nos Segmentos de Fertilizantes, Cervejaria, Painéis Sintéticos de Madeira e há 12 anos no Segmento Automotivo. Possui 17 anos de experiência na área de Logística Integrada e SCM, atualmente exercendo o cargo de Gerente de Supply Chain na Continental do Brasil Produtos Automotivos Ltda, em Ponta Grossa, na unidade de Correias Automotivas. </p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/luiz_mottim_c.png" alt="Luiz Mottim">
+                                </figure>
+                                <h3>Luiz Mottim</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/luiz-mottim-609a2a15/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingFour" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-face">tag_faces</i>
+                                <h5 class="mb-0">Desenvolvimento Pessoal</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                A vida é cheia de ações determinantes que precisamos tomar e, para que possamos fazer a escolha certa, devemos estar capacitados para atender cada oportunidade. O desenvolvimento pessoal e profissional é fundamental para potencializar habilidades e competências, tornando possível ampliar realizações e ter uma vida mais bem-sucedida. Nesta palestra, Maria Alice falará sobre o desenvolvimento pessoal, uma exigência para o sucesso profissional, e sua importânci no mercado de trabalho.
+                              </p>
+                              <p class="paragrafo">Maria Alice é profissional de Gestão de Pessoas na área de tecnologia da informação, atuando desde 2008 no processo de desenvolvimento de software e assumindo a partir de 2013 a área de Gestão de Pessoas.  Formada em Análise e Desenvolvimento de Sistemas, pela UTFPR.</p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/maria_alice_c.png" alt="Maria Alice Jovinski">
+                                </figure>
+                                <h3>Maria Alice Jovinski</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/mjovinski/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingFive" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-memory">memory</i>
+                                <h5 class="mb-0">Tendências de tecnologia e os desafios do mercado de trabalho</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                Nesta palestra, Maurício traz uma visão geral sobre as tendências tecnológicas que devem gerar boas oportunidades de negócios nos próximos anos, aplicando uma análise sobre as possibilidades de exploração destas oportunidades, seja empreendendo em um negócio próprio ou atuando dentro de empresas de tecnologia e outro setores. Como resultado final você terá uma visão mais clara do que esperar do mercado após a conclusão do curso universitário.
+                              </p>
+                              <p class="paragrafo">Maurício Dos Santos, é empresário da área de TI. Fundador e CEO da Virtual Softwares para Seguros, atuando a 28 anos com software. Participou de missões tecnológicas ao Vale do Silício, buscando e implantando idéias na gestão de pessoas e de negócios. Realiza mentoria voluntária para Startups auxiliando na composição e validação de modelos de negócio, ja tendo participado de eventos como Hackatons, Pirates e Startup Weekend atuando como mentor de tecnologia e de negócios.</p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/mauricio_santos_c.png" alt="Maurício dos Santos">
+                                </figure>
+                                <h3>Maurício dos Santos</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/mauriciosantosvirtual/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingSix" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-virtual">surround_sound</i>
+                                <h5 class="mb-0">Realidade Virtual, presente e futuro</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                A cada hora, a cada momento, notamos o extraordinário desenvolvimento da ciência e da tecnologia. Um dos recentes adventos deste desenvolvimento, que vêm se firmando, no exterior, como uma nova área da Ciência da Computação é o que chamamos Realidade Virtual.A VR vem trazer ao uso do computador um novo paradigma de interface com o usuário. Neste paradigma, o usuário não estará mais em frente ao monitor, mas sim, sentir-se-á dentro da interface. Nesta palestra, você terá a cobertura completa sobre VR com Fabio, integrante da Beenoculus VR Solution.
+                              </p>
+                              <p class="paragrafo">
+                                Fábio Ivatiuk é Bacharel em Direito, Mestre em Direito Digital (Universidade de Hannover, ALE), MBA em Gestão Estratégica de Empresas (FGV), Diretor na inFlux English School Ponta Grossa e Irati e Coordenador de Equipes na Beenoculus VR Solutions, Curitiba.
+                              </p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/fabio_c.png" alt="Fábio Ivatiuk">
+                                </figure>
+                                <h3>Fábio Ivatiuk</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/fabio-luis-glinski-ivatiuk-001083b0/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingSeven" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-arvore">nature</i>
+                                <h5 class="mb-0">Agritechs - Inovação no agronegócio</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                As agritechs vêm ganhando espaço no cenário brasileiro. Também, pudera. Estamos falando das soluções para o setor que é responsável por mais de um quinto do Produto Interno Bruto (PIB) brasileiro. Em 2015, isso significa que R$ 1,267 trilhões das riquezas produzidas no país vieram da agricultura e da pecuária, segundo o PIB Agropecuário, calculado por Cepea/USP e CNA. Luiz atua neste senário por meio da Castrolanda e trará uma visão geral sobre Agritechs nesta palestra.
+                              </p>
+                              <p class="paragrafo">
+                                Luiz Frederico é Analista de sistemas por formação, colaborador em projetos de TI e é apaixonado por novas tecnologias que simplificam a vida das pessoas. Atua como Gestor de TI desde 2006 em indústrias e atualmente na Castrolanda. Idealizador do Hackathon Agroleite 2017, busca constantemente novas parcerias ligadas à tecnologia.
+                              </p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/luiz_frederico_c.png" alt="Luiz Frederico">
+                                </figure>
+                                <h3>Luiz Frederico</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/luiz-fernando-s-frederico-58284a1b/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
-
-                <div class="box-atividades">
-                    <div class="detalhes-atividade">
-                        <img src="img/node-js--MINICURSO.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/sebrei_desenvolvimento-pessual.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Palestra com asdas asas</h3>
-                        <h4>Lucasasdasd</h4>
-                        <p>Desenvolvedor </p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/html.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/node-js--MINICURSO.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/sebrei_desenvolvimento-pessual.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Palestra com asdas asas</h3>
-                        <h4>Lucasasdasd</h4>
-                        <p>Desenvolvedor </p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/html.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/html.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip SDFRG THGFHSFGHFGHSFDadf dfg dfgdf</p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/html.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
                 </div>
             </div>
             <div class="minicursos">
@@ -247,57 +366,149 @@ License: none (public domain)
                     <i class="material-icons">devices</i>
                     <h3>Minicursos</h3>
                 </header>
-                <div class="box-atividades">
-                    <div class="detalhes-atividade">
-                        <img src="img/node-js--MINICURSO.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/sebrei_desenvolvimento-pessual.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Palestra com asdas asas</h3>
-                        <h4>Lucasasdasd</h4>
-                        <p>Desenvolvedor </p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/html.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/node-js--MINICURSO.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/sebrei_desenvolvimento-pessual.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Palestra com asdas asas</h3>
-                        <h4>Lucasasdasd</h4>
-                        <p>Desenvolvedor </p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/html.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
-                    <div class="detalhes-atividade">
-                        <img src="img/html.png" alt="Minicurso Node">
-                        <span class="separador"></span>
-                        <h3>Paletra</h3>
-                        <h4>Lucas Silva</h4>
-                        <p>Desenvolvedor web, entusiasta full stack mean, evangelista javascrip</p>
-                    </div>
+                <div class="detalhe-atividade">
+                  <div  id="accordion" role="tablist">
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-planta">spa</i>
+                                <h5 class="mb-0">Big Data na Agricultura</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">A agricultura de precisão está entrando de forma acelerada no agronegócio brasileiro e, com o Big Data (tecnologia para processar e tratar de grandes quantidades de dados), vai gerar uma nova revolução agrícola, garantindo aumento da produtividade e da produção sem necessidade de aumento de área. Nesta palestra, Tsen abordará a importância da tecnologia no campo e como o Big Data pode revolucionar esse setor.</p>
+                              <p class="paragrafo">Tsen Chung Kang é Doutor em Engenharia de Computação pela Carnegie Mellon University. Professor da Fatec Shunji Nishimura, atua em governança corporativa, planejamento estratégico e inovação tecnológica.</p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/tsen_c.png" alt="Tsen Chung Kang">
+                                </figure>
+                                <h3>Tsen Chung Kang</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/tsen-kang-6a85511/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingTwo" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-saude">local_hospital</i>
+                                <h5 class="mb-0">Big Data na Saúde</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                Existem três áreas auspiciosas para o uso de Big Data em saúde: medicina de precisão; prontuários eletrônicos do paciente; e internet das coisas. Em relação às novas técnicas estatísticas, espera-se que técnicas de machine learning (principalmente as árvores de classificação e regressão), metodologias para controlar por associações espúrias (como a correção de Bonferroni e a taxa de falsas descobertas) e metodologias para a redução da dimensão dos dados (como a análise de componentes principais e o propensity score matching) sejam cada vez mais utilizadas. Essas e outras aplicações serão apresentadas nesta palestra ministrada por Stephen.
+                              </p>
+                              <p class="paragrafo">Stephen Kunihiro é graduado em Odontologia pela UNESP, Mestre pela UNICAMP e com duas Pós Graduação (USP, UNICAMP). É sócio proprietário das empresas NK Solutions e Eneka Odontologia. Envolvido com projetos de startups, vive em busca de inovação e tecnologia aplicada a saúde.</p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/stephen_c.png" alt="Stephen Kunihiro">
+                                </figure>
+                                <h3>Stephen Kunihiro</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/stephen-kunihiro-b5249525/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingThree" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-business">business_center</i>
+                                <h5 class="mb-0">Logística 4.0</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                Com o surgimento da Industria 4.0, o Setor Automotivo alcançará patamares de perfeição no desenvolvimento de seus processos produtivos, com alto nível de automação e robotização operacional. Em função desta evolução a área de Supply Chain precisa necessariamente alavancar seus processos, para atender as demandas de Suprimentos e Abastecimentos no mesmo nível de excelência. Esta palestra tem como objetivo demonstrar como o SCM atuará para acompanhar a chamada Quarta Revolução Industrial.
+                              </p>
+                              <p class="paragrafo">Luiz Mottim é graduado em Ciências Contábeis pela UEPG, com Pós Graduação em Gestão Logística e Gestão Industrial, 31 anos de Experiência profissional, trabalhando nos Segmentos de Fertilizantes, Cervejaria, Painéis Sintéticos de Madeira e há 12 anos no Segmento Automotivo. Possui 17 anos de experiência na área de Logística Integrada e SCM, atualmente exercendo o cargo de Gerente de Supply Chain na Continental do Brasil Produtos Automotivos Ltda, em Ponta Grossa, na unidade de Correias Automotivas. </p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/luiz_mottim_c.png" alt="Luiz Mottim">
+                                </figure>
+                                <h3>Luiz Mottim</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/luiz-mottim-609a2a15/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingFour" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-face">tag_faces</i>
+                                <h5 class="mb-0">Desenvolvimento Pessoal</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                A vida é cheia de ações determinantes que precisamos tomar e, para que possamos fazer a escolha certa, devemos estar capacitados para atender cada oportunidade. O desenvolvimento pessoal e profissional é fundamental para potencializar habilidades e competências, tornando possível ampliar realizações e ter uma vida mais bem-sucedida. Nesta palestra, Maria Alice falará sobre o desenvolvimento pessoal, uma exigência para o sucesso profissional, e sua importânci no mercado de trabalho.
+                              </p>
+                              <p class="paragrafo">Maria Alice é profissional de Gestão de Pessoas na área de tecnologia da informação, atuando desde 2008 no processo de desenvolvimento de software e assumindo a partir de 2013 a área de Gestão de Pessoas.  Formada em Análise e Desenvolvimento de Sistemas, pela UTFPR.</p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/maria_alice_c.png" alt="Maria Alice Jovinski">
+                                </figure>
+                                <h3>Maria Alice Jovinski</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/mjovinski/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingFive" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <div class="titulo-atividade">
+                              <div class="ajuste-icon">
+                                <i class="material-icons icon-memory">memory</i>
+                                <h5 class="mb-0">Tendências de tecnologia e os desafios do mercado de trabalho</h5>
+                              </div>
+                              <i class="material-icons seta-collapse">arrow_drop_down</i>
+                            </div>
+                          </div>
+                          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body conteudo-collapse">
+                              <p class="paragrafo">
+                                Nesta palestra, Maurício traz uma visão geral sobre as tendências tecnológicas que devem gerar boas oportunidades de negócios nos próximos anos, aplicando uma análise sobre as possibilidades de exploração destas oportunidades, seja empreendendo em um negócio próprio ou atuando dentro de empresas de tecnologia e outro setores. Como resultado final você terá uma visão mais clara do que esperar do mercado após a conclusão do curso universitário.
+                              </p>
+                              <p class="paragrafo">Maurício Dos Santos, é empresário da área de TI. Fundador e CEO da Virtual Softwares para Seguros, atuando a 28 anos com software. Participou de missões tecnológicas ao Vale do Silício, buscando e implantando idéias na gestão de pessoas e de negócios. Realiza mentoria voluntária para Startups auxiliando na composição e validação de modelos de negócio, ja tendo participado de eventos como Hackatons, Pirates e Startup Weekend atuando como mentor de tecnologia e de negócios.</p>
+                              <div class="box-convidado">
+                                <figure class="box-img-convidado">
+                                    <img class="img-convidado" src="img/convidados/mauricio_santos_c.png" alt="Maurício dos Santos">
+                                </figure>
+                                <h3>Maurício dos Santos</h3>
+                                <div class="icon-linkedin">
+                                  <a href="https://www.linkedin.com/in/mauriciosantosvirtual/" target="_blank"><img class="icon" src="img/linkedin.png" alt="linkedin"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
                 </div>
+
             </div>
         </section>
         <section id="link-programacao" class="programacao">
@@ -644,7 +855,7 @@ License: none (public domain)
             </table>
 
         </section>
-        <section class="cadastro" id="link-contato">
+        <!-- <section class="cadastro" id="link-contato">
             <div class="titulo-secao">
                 <i class="material-icons">record_voice_over</i>
                 <h2>Contato</h2>
@@ -664,8 +875,8 @@ License: none (public domain)
                 </div>
             </form>
             <button class="btn-contato btn btn-outline-primary btn-lg" type="submit">Enviar</button>
-        </section>
-        <section class="equipe">
+        </section> -->
+        <section class="equipe" id="link-organizacao">
             <h2>Comissão Organizadora</h2>
             <div class="box-membro">
                 <div class="membro">
