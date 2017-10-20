@@ -14,6 +14,10 @@ var img6 = document.getElementById('convidado6');
 var img7 = document.getElementById('convidado7');
 var img8 = document.getElementById('convidado8');
 var img9 = document.getElementById('convidado9');
+var img10 = document.getElementById('convidado10');
+var img11 = document.getElementById('convidado11');
+var img12 = document.getElementById('convidado12');
+var img13 = document.getElementById('convidado13');
 
 if (width <= 768){
         var img0 = $("#convidado0").attr('src', 'img/convidados/banner_mb.png');
@@ -26,4 +30,8 @@ if (width <= 768){
         var img7 = $("#convidado7").attr('src', 'img/convidados/fabio_mb.png');
         var img8 = $("#convidado8").attr('src', 'img/convidados/luiz_mottim_mb.png');
         var img9 = $("#convidado9").attr('src', 'img/convidados/marlos_mb.png');
+        var img10 = $("#convidado10").attr('src', 'img/convidados/anderson_mb.png');
+        var img11 = $("#convidado11").attr('src', 'img/convidados/joao_pellissari_mb.png');
+        var img12 = $("#convidado12").attr('src', 'img/convidados/elton_mb.png');
+        var img13 = $("#convidado13").attr('src', 'img/convidados/emerson_mb.png');
 }
