@@ -50,9 +50,10 @@ License: none (public domain)
                     <a class="scroll-suave" href="#link-organizacao">Organização</a>
                 </li>
             </ul>
-            <!--<div class="botoes-acesso">
+            <div class="botoes-acesso">
+                <pre id="inscritosmb"></pre>
                 <button class="botao botao-inscricao">Inscreva-se</button>
-            </div>-->
+            </div>
         </nav>
         <div class="barra-cabecalho">
             <button class="abre-menu">
@@ -69,9 +70,10 @@ License: none (public domain)
                     <li><a class="scroll-suave" href="#link-programacao">Programação</a></li>
                     <li><a class="scroll-suave" href="#link-organizacao">Organização</a></li>
                 </ul>
-                <!-- <div class="botoes-acesso">
+                <div class="botoes-acesso">
+                   <pre id="inscritos"></pre>
                    <button class="botao botao-inscricao">Inscreva-se</button>
-                </div> -->
+                </div>
             </nav>
         </div>
     </header>
@@ -1118,27 +1120,35 @@ License: none (public domain)
             </table>
 
         </section>
-        <!-- <section class="cadastro" id="link-contato">
+        <section class="cadastro" id="link-inscricao">
             <div class="titulo-secao">
-                <i class="material-icons">record_voice_over</i>
-                <h2>Contato</h2>
+                <i class="material-icons">border_color</i>
+                <h2>Inscrição</h2>
             </div>
-            <form>
+            <form class="inscricao">
+              <div class="box-inscricao">
                 <div class="form-group">
                     <label for="contato-nome">Nome:</label>
-                    <input id="contato-nome" type="text" placeholder="Seu nome" class="form-control">
+                    <input id="contato-nome" type="text" placeholder="seu nome" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="contato-email">Email:</label>
-                    <input type="email" placeholder="Seu e-mail" class="form-control">
+                    <input type="email" placeholder="seu e-mail" class="form-control">
+                </div>
+              </div>
+              <div class="box-inscricao">
+                <div class="form-group">
+                    <label for="contato-nome">CPF:</label>
+                    <input id="contato-nome" type="text" placeholder="digite somente os números" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Mensagem:</label>
-                    <textarea class="form-control" placeholder="Digite sua mensagem aqui..." rows="3"></textarea>
+                    <label for="contato-nome">RA:</label>
+                    <input id="contato-nome" type="text" placeholder="digite somente os números" class="form-control">
                 </div>
+              </div>
             </form>
             <button class="btn-contato btn btn-outline-primary btn-lg" type="submit">Enviar</button>
-        </section> -->
+        </section>
         <section class="equipe" id="link-organizacao">
             <h2>Comissão Organizadora</h2>
             <div class="box-membro">
@@ -1151,12 +1161,12 @@ License: none (public domain)
                     <h3>Gustavo Endo</h3>
                 </div>
                 <div class="membro">
-                    <img src="img/equipe/lucas-jozefovicz.jpg" alt="Lucas Jozefovicz">
-                    <h3>Lucas Jozefovicz</h3>
-                </div>
-                <div class="membro">
                     <img src="img/equipe/lucas-silva.jpg" alt="Lucas Silva">
                     <h3>Lucas Silva</h3>
+                </div>
+                <div class="membro">
+                    <img src="img/equipe/lucas-jozefovicz.jpg" alt="Lucas Jozefovicz">
+                    <h3>Lucas Jozefovicz</h3>
                 </div>
                 <div class="membro">
                     <img src="img/equipe/rafael-mattos.jpg" alt="Rafael de Mattos">
@@ -1215,5 +1225,7 @@ License: none (public domain)
     <script src="js/carousel-img.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/banner-collepse.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="js/firebase.js"></script>
 </body>
 </html>

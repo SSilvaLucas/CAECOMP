@@ -655,6 +655,14 @@ tr:nth-child(even) {
 }
 
 @media (min-width: 768px){
+    .form-group{
+      width: 48%;
+    }
+    .box-inscricao{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     .detalhe-atividade{
       width: 80%;
       margin: 0 auto;
