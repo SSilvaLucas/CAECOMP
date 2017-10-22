@@ -277,6 +277,13 @@ nav{
     margin-left: auto;
 }
 
+.btn-inscricao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
 
 .box-convidado{
     width: 100%;
@@ -297,6 +304,35 @@ nav{
     .box-convidado .icon:active{
         opacity: 0.8;
     }
+
+    #titulo-checkbox{
+      margin-top: 1em;
+      text-align: center;
+      margin-bottom: .8em;
+    }
+
+  .checkbox-cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkbox-cadastro table{
+    margin-bottom: 1em;
+  }
+  .checkbox-cadastro th{
+    font-weight: bold;
+    text-align: center;
+  }
+  .checkbox-cadastro tr label{
+    font-weight: normal;
+  }
+  .checkbox-cadastro table td, .checkbox-cadastro table th{
+    border: none;
+    background: #eee;
+    text-align: center;
+  }
+
 
 .icon{
     width: 100%;
@@ -332,6 +368,9 @@ nav{
   .cadastro label{
     font-weight: bold;
     margin-bottom: .3em;
+  }
+  .cadastro .titulo-secao{
+    margin-bottom: 1.5em;
   }
 
 .corpo{
@@ -509,7 +548,7 @@ footer{
 
 .programacao{
     width: 100%;
-    margin: 0 auto 4em auto;
+    margin: 0 auto 3em auto;
     padding: 1em;
 }
 
@@ -657,6 +696,17 @@ tr:nth-child(even) {
 @media (min-width: 768px){
     .form-group{
       width: 48%;
+    }
+    .checkbox-cadastro{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: row;
+      margin-top: .5em;
+      margin-bottom: 0;
+    }
+    .checkbox-cadastro table td{
+      text-align: left;
     }
     .box-inscricao{
       display: flex;
