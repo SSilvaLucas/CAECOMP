@@ -2,6 +2,7 @@
 Made by Lucas Silva
 License: none (public domain)
 */
+
 var width = screen.width;
 //var height = screen.height;
 var img0 = document.getElementById('convidado0');

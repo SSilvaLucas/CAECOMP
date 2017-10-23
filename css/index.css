@@ -13,6 +13,10 @@ body{
 }
 
 /*MENU*/
+.observacao{
+  text-align: center;
+  font-size: .7em;
+}
 
 .abre-menu, .logo-site{
     display: flex;
@@ -282,7 +286,7 @@ nav{
   justify-content: center;
   align-items: center;
   margin-top: 2em;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 }
 
 .box-convidado{
@@ -706,6 +710,9 @@ tr:nth-child(even) {
       margin-bottom: 0;
     }
     .checkbox-cadastro table td{
+      text-align: left;
+    }
+    .checkbox-cadastro table th{
       text-align: left;
     }
     .box-inscricao{

@@ -51,7 +51,7 @@ License: none (public domain)
                 </li>
             </ul>
             <div class="botoes-acesso">
-                <pre id="inscritosmb"></pre>
+                <p><div id="inscritosmb"></div>Pessoas Inscritas</p>
                 <button class="botao botao-inscricao">Inscreva-se</button>
             </div>
         </nav>
@@ -71,7 +71,7 @@ License: none (public domain)
                     <li><a class="scroll-suave" href="#link-organizacao">Organização</a></li>
                 </ul>
                 <div class="botoes-acesso">
-                   <pre id="inscritos"></pre>
+                   <p><div id="inscritos"></div>Pessoas Inscritas</p>
                    <button class="botao botao-inscricao">Inscreva-se</button>
                 </div>
             </nav>
@@ -1125,55 +1125,57 @@ License: none (public domain)
                 <i class="material-icons">border_color</i>
                 <h2>Inscrição</h2>
             </div>
-            <form class="inscricao">
+            <form id="formId" class="inscricao">
               <div class="box-inscricao">
                 <div class="form-group">
                     <label for="contato-nome">Nome:</label>
-                    <input id="contato-nome" type="text" placeholder="seu nome" class="form-control">
+                    <input id="contato-nome" name="nome" type="text" placeholder="seu nome completo" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="contato-email">Email:</label>
-                    <input type="email" placeholder="seu e-mail" class="form-control">
+                    <input id="contato-email" name="email" type="email" placeholder="seu e-mail" class="form-control">
                 </div>
               </div>
               <div class="box-inscricao">
                 <div class="form-group">
-                    <label for="contato-nome">CPF:</label>
-                    <input id="contato-nome" type="text" placeholder="digite somente os números" class="form-control">
+                    <label for="contato-cpf">CPF:</label>
+                    <input id="contato-cpf" name="cpf" type="text" placeholder="digite somente os números" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="contato-nome">RA:</label>
-                    <input id="contato-nome" type="text" placeholder="digite somente os números" class="form-control">
+                    <label for="contato-ra">RA:</label>
+                    <input id="contato-ra" name="ra" type="text" placeholder="digite somente os números" class="form-control">
                 </div>
               </div>
               <label id="titulo-checkbox">Selecione os minicursos que você deseja participar (máximo três):</label>
               <div class="checkbox-cadastro">
                 <table>
                     <th>06/11/2017</th>
-                    <tr><td><label class="label-checkbox"><input class="limited" type="checkbox"> CorelDRAW</label></td></tr>
-                    <tr><td><label class="label-checkbox"><input class="limited" type="checkbox"> Desenvolvimento Web</label></td></tr>
-                    <tr><td><label class="label-checkbox"><input class="limited" type="checkbox"> Git</label></td></tr>
+                    <tr><td><label><input name="corel6" value="corel6" id="corel6" class="limited dia6" type="checkbox"> CorelDRAW<span id="desc-corel6"></span></label></td></tr>
+                    <tr><td><label><input name="web6" value="web6" id="web6" class="limited dia6" type="checkbox"> Desenvolvimento Web<span id="desc-web6"></span></label></td></tr>
+                    <tr><td><label><input name="git" value="git" id="git" class="limited dia6" type="checkbox"> Git<span id="desc-git"></span></label></td></tr>
                 </table>
                 <table>
                     <th>07/11/2017</th>
-                    <tr><td><label><input class="limited" type="checkbox"> Angular</label></td></tr>
-                    <tr><td><label><input class="limited" type="checkbox"> CorelDRAW</label></td></tr>
+                    <tr><td><label><input name="angular" value="angular" id="angular" class="limited dia7" type="checkbox"> Angular<span id="desc-angular"></span></label></td></tr>
+                    <tr><td><label><input name="corel7" value="corel7" id="corel7" class="limited dia7" type="checkbox"> CorelDRAW<span id="desc-corel7"></span></label></td></tr>
                 </table>
                 <table>
                     <th>08/11/2017</th>
-                    <tr><td><label><input class="limited" type="checkbox"> Desenvolvimento Web</label></td></tr>
-                    <tr><td><label><input class="limited" type="checkbox"> Laravel</label></td></tr>
+                    <tr><td><label><input name="web8" value="web8" id="web8" class="limited dia8" type="checkbox"> Desenvolvimento Web<span id="desc-web8"></span></label></td></tr>
+                    <tr><td><label><input name="laravel" value="laravel"  id="laravel" class="limited dia8" type="checkbox"> Laravel<span id="desc-laravel"></span></label></td></tr>
                 </table>
                 <table>
                     <th>10/11/2017</th>
-                    <tr><td> <label><input class="limited" type="checkbox"> API REST com PHP</label></td></tr>
-                    <tr><td><label><input class="limited" type="checkbox"> Como se preparar para o processo seletivo</label></td></tr>
+                    <tr><td> <label><input name="api" value="api" id="api" class="limited dia10" type="checkbox"> API REST com PHP<span id="desc-api"></span></label></td></tr>
+                    <tr><td><label><input name="entrevista" value="entrevista" id="entrevista" class="limited dia10" type="checkbox"> Como se preparar para o processo seletivo<div id="desc-entrevista"></div></label></td></tr>
                 </table>
               </div>
             </form>
             <div class="btn-inscricao">
-              <button class="btn-contato btn btn-outline-primary btn-lg" type="submit">Inscrever-se</button>
+              <button id="adiciona-participante" class="btn-contato btn btn-outline-primary btn-lg" type="submit">Inscrever-se</button>
             </div>
+            <p class="observacao">OBS: caso você já tenha se inscrito e gostaria de alterar algum dado, inscreva-se novamente.</p>
+
         </section>
         <section class="equipe" id="link-organizacao">
             <h2>Comissão Organizadora</h2>
@@ -1254,5 +1256,6 @@ License: none (public domain)
     <script src="bootstrap/js/banner-collepse.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <script src="js/firebase.js"></script>
+    <script src="js/cadastro.js"></script>
 </body>
 </html>
