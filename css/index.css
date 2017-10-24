@@ -13,6 +13,11 @@ body{
 }
 
 /*MENU*/
+.inscritosn{
+  font-size: .8em;
+  margin-top: .5em;
+}
+
 .observacao{
   text-align: center;
   font-size: .7em;
@@ -74,6 +79,10 @@ body{
     color: #fff;
     background-color: #4dba7a;
     border: .12em solid #4dba7a;
+}
+
+.menu-principal li:last-child{
+  margin-bottom: .2em;
 }
 
 .botao-inscricao:active{
@@ -820,9 +829,14 @@ tr:nth-child(even) {
     }
     .barra-nav-desktop .botoes-acesso{
         position: absolute;
-        right: -3%;
+        right: 3%;
         top: 50%;
         transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .barra-nav-desktop .botoes-acesso p{
+      font-size: .6em;
+      margin-top: .5em;
     }
     .botao-inscricao{
         font-size: .6em;
