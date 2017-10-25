@@ -220,6 +220,16 @@ body{
   transform: translateY(-13%);
 }
 
+.icon-dns{
+  color: #4D607F;
+  transform: translateY(-9%);
+}
+
+.icon-bubble{
+  color: #795A35;
+  transform: translateY(-9%);
+}
+
 .menu-ativo .barra-nav-mobile{
     left: 0;
 }
