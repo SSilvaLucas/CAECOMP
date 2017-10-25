@@ -7,7 +7,7 @@ const botao = document.querySelector("#adiciona-participante");
 
 const database = firebase.database().ref();
 const nodoParticipante = database.child('participante');
-// 
+//
 // database.nodoParticipante.orderByChild('entrevista').equalTo(false).on;
 // console.log(teste);
 botao.addEventListener("click", function(event){
@@ -31,7 +31,6 @@ function obtemParticipanteFormulario(form){
     nome: form.nome.value,
     email: form.email.value,
     cpf: form.cpf.value,
-    ra: form.ra.value,
     corel6: form.corel6.checked,
     web6: form.web6.checked,
     git: form.git.checked,
@@ -56,11 +55,6 @@ function validaParticipante(participante){
       return false;
   }
 
-  if(participante.ra.length == 0){
-      alert("O campo do RA está em branco!");
-      return false;
-  }
-
   if(participante.cpf.length == 0){
       alert("O campo CPF está em branco!");
       return false;
@@ -71,15 +65,6 @@ function validaParticipante(participante){
       return false;
   }
 
-  // if(cpfCadastrado(participante.cpf)){
-  //     alert("Número de CPF já Inscrito!");
-  //     return false;
-  // }
-
-  if(!validaRa(participante.ra)){
-      alert("Número de RA inválido!");
-      return false;
-  }
   return true;
 }
 
@@ -113,24 +98,4 @@ function validaCpf(cpf) {
         return false;
     }
     return true;
-}
-
-// function cpfCadastrado(cpf){
-//   var lista = null;
-//   lista = firebase.database().ref().child('participante').orderByChild('cpf').equalTo(cpf);
-//   console.log(lista);
-//   if(lista==null){
-//     return false;
-//   }else{
-//     return true;
-//   }
-// }
-
-
-function validaRa(ra){
-  if (ra.length != 8){
-    return false;
-  }else{
-    return true;
-  }
 }
