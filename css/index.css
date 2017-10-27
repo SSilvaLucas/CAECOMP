@@ -12,6 +12,11 @@ body{
     font-size: 1em;
 }
 
+.card-header:hover{
+  text-decoration: none;
+  opacity: 0.7;
+}
+
 /*MENU*/
 .inscritosn{
   font-size: .8em;
@@ -731,6 +736,33 @@ tr:nth-child(even) {
     }
     #cpf{
       width: 24%;
+    }
+    #endereco{
+      width: 60%
+    }
+    #ddd{
+      width: 7%;
+    }
+    #telefone{
+      width: 15%;
+    }
+    #data-nascimento{
+      width: 16%
+    }
+    #rg{
+      width: 20%;
+    }
+    #ra{
+      width: 20%;
+    }
+    #curso{
+      width: 26%;
+    }
+    #turno{
+      width: 15%;
+    }
+    #serie{
+      width: 15%;
     }
 
     .checkbox-cadastro{
