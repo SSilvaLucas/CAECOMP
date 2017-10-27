@@ -7,9 +7,7 @@ const botao = document.querySelector("#adiciona-participante");
 
 const database = firebase.database().ref();
 const nodoParticipante = database.child('participante');
-//
-// database.nodoParticipante.orderByChild('entrevista').equalTo(false).on;
-// console.log(teste);
+
 botao.addEventListener("click", function(event){
   event.preventDefault();
 
