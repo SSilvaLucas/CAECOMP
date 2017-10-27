@@ -48,7 +48,8 @@ function obtemParticipanteFormulario(form){
     web8: form.web8.checked,
     laravel: form.laravel.checked,
     api: form.api.checked,
-    entrevista: form.entrevista.checked
+    entrevista: form.entrevista.checked,
+    frequencia: 0
   }
   return participante;
 }
