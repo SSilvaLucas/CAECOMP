@@ -31,7 +31,7 @@ function obtemParticipanteFormulario(form){
     cpf: form.cpf.value,
     endereco: form.endereco.value,
     ddd: form.ddd.value,
-    telefone: form.ddd.value,
+    telefone: form.telefone.value,
     nascimento: form.nascimento.value,
     rg: form.rg.value,
     ra: form.ra.value,

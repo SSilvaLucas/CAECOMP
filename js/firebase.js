@@ -69,14 +69,14 @@ query.once("value").then(function(snapshot){
     }
   });
 
-  if(vagasCorel6 <= 25){
+  if(vagasCorel6 < 25){
     vagas = 25 - vagasCorel6;
     document.getElementById("desc-corel6").innerHTML = " (" + vagas +" Vagas)";
   }else{
     document.getElementById("corel6").disabled = true;
     document.getElementById("desc-corel6").innerHTML = " (ESGOTADO)";
   }
-  if(vagasWeb6 <= 25){
+  if(vagasWeb6 < 25){
     vagas = 25 - vagasWeb6;
     document.getElementById("desc-web6").innerHTML = " (" + vagas +" Vagas)";
   }else{
@@ -84,49 +84,49 @@ query.once("value").then(function(snapshot){
     document.getElementById("desc-web6").innerHTML = " (ESGOTADO)";
   }
 
-  if(vagasGit <= 25){
+  if(vagasGit < 25){
     vagas = 25 - vagasGit;
     document.getElementById("desc-git").innerHTML = " (" + vagas +" Vagas)";
   }else{
     document.getElementById("git").disabled = true;
     document.getElementById("desc-git").innerHTML = " (ESGOTADO)";
   }
-  if(vagasAngular <= 30){
+  if(vagasAngular < 30){
     vagas = 30 - vagasAngular;
     document.getElementById("desc-angular").innerHTML = " (" + vagas +" Vagas)";
   }else{
     document.getElementById("angular").disabled = true;
     document.getElementById("desc-angular").innerHTML = " (ESGOTADO)";
   }
-  if(vagasCorel7 <= 25){
+  if(vagasCorel7 < 25){
     vagas = 25 - vagasCorel7;
     document.getElementById("desc-corel7").innerHTML = " (" + vagas +" Vagas)";
   }else{
     document.getElementById("corel7").disabled = true;
     document.getElementById("desc-corel7").innerHTML = " (ESGOTADO)";
   }
-  if(vagasWeb8 <= 25){
+  if(vagasWeb8 < 25){
     vagas = 25 - vagasWeb8;
     document.getElementById("desc-web8").innerHTML = " (" + vagas +" Vagas)";
   }else{
     document.getElementById("web8").disabled = true;
     document.getElementById("desc-web8").innerHTML = " (ESGOTADO)";
   }
-  if(vagasLaravel <= 25){
+  if(vagasLaravel < 25){
     vagas = 25 - vagasLaravel;
     document.getElementById("desc-laravel").innerHTML = " (" + vagas +" Vagas)";
   }else{
     document.getElementById("laravel").disabled = true;
     document.getElementById("desc-laravel").innerHTML = " (ESGOTADO)";
   }
-  if(vagasApi <= 25){
+  if(vagasApi < 25){
     vagas = 25 - vagasApi;
     document.getElementById("desc-api").innerHTML = " (" + vagas +" Vagas)";
   }else{
     document.getElementById("api").disabled = true;
     document.getElementById("desc-api").innerHTML = " (ESGOTADO)";
   }
-  if(vagasEntrevista <= 40){
+  if(vagasEntrevista < 40){
     vagas = 40 - vagasEntrevista;
     document.getElementById("desc-entrevista").innerHTML = " (" + vagas +" Vagas)";
   }else{
