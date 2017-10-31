@@ -19,6 +19,9 @@ var img10 = document.getElementById('convidado10');
 var img11 = document.getElementById('convidado11');
 var img12 = document.getElementById('convidado12');
 var img13 = document.getElementById('convidado13');
+var img14 = document.getElementById('convidado14');
+var img15 = document.getElementById('convidado15');
+var img16 = document.getElementById('convidado16');
 
 if (width <= 768){
         var img0 = $("#convidado0").attr('src', 'img/convidados/banner_mb.png');
@@ -35,4 +38,7 @@ if (width <= 768){
         var img11 = $("#convidado11").attr('src', 'img/convidados/joao_pellissari_mb.png');
         var img12 = $("#convidado12").attr('src', 'img/convidados/elton_mb.png');
         var img13 = $("#convidado13").attr('src', 'img/convidados/emerson_mb.png');
+        var img14 = $("#convidado14").attr('src', 'img/convidados/joao_machado_mb.png');
+        var img15 = $("#convidado15").attr('src', 'img/convidados/ronald_mb.png');
+        var img16 = $("#convidado16").attr('src', 'img/convidados/andressa_mb.png');
 }

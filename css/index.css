@@ -236,6 +236,15 @@ body{
   transform: translateY(-9%);
 }
 
+.icon-cloud{
+  color: #eeba37;
+  transform: translateY(-9%);
+}
+
+.icon-maleta{
+  transform: translateY(-12%);
+}
+
 .menu-ativo .barra-nav-mobile{
     left: 0;
 }
@@ -655,6 +664,9 @@ footer{
   display: flex;
   justify-content: space-between;
   height: 2.5em;
+}
+.titulo-atividade h5{
+  text-transform: uppercase;
 }
 
 .titulo-box-atividades{
