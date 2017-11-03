@@ -22,6 +22,7 @@ var img13 = document.getElementById('convidado13');
 var img14 = document.getElementById('convidado14');
 var img15 = document.getElementById('convidado15');
 var img16 = document.getElementById('convidado16');
+var img17 = document.getElementById('convidado17');
 
 if (width <= 768){
         var img0 = $("#convidado0").attr('src', 'img/convidados/banner_mb.png');
@@ -41,4 +42,5 @@ if (width <= 768){
         var img14 = $("#convidado14").attr('src', 'img/convidados/joao_machado_mb.png');
         var img15 = $("#convidado15").attr('src', 'img/convidados/ronald_mb.png');
         var img16 = $("#convidado16").attr('src', 'img/convidados/andressa_mb.png');
+        var img16 = $("#convidado17").attr('src', 'img/convidados/ariangelo_mb.png');
 }

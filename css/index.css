@@ -245,6 +245,11 @@ body{
   transform: translateY(-12%);
 }
 
+.icon-industria{
+  color: #444;
+  transform: translateY(-9%);
+}
+
 .menu-ativo .barra-nav-mobile{
     left: 0;
 }
